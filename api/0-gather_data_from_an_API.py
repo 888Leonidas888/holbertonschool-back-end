@@ -39,8 +39,6 @@ def main():
 
         except requests.exceptions.HTTPError as e:
             print(f"Error de solictud: {e}")
-    else:
-        print('Ah ingresado un id no válido')
 
 
 if __name__ == '__main__':
