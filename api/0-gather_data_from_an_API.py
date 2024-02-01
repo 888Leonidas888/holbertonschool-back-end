@@ -28,9 +28,8 @@ def main():
 
                 NUMBER_OF_DONE_TASKS = total_task
                 TOTAL_NUMBER_OF_TASKS = len(todos)
-                text = f"""Employee {EMPLOYEE_NAME} is done with
-                         tasks({NUMBER_OF_DONE_TASKS}/
-                         {TOTAL_NUMBER_OF_TASKS}):"""
+                text = f"Employee {EMPLOYEE_NAME} is done with "\
+                    f"tasks({NUMBER_OF_DONE_TASKS}/{TOTAL_NUMBER_OF_TASKS}):"
 
                 print(text)
                 for todo in todos:
