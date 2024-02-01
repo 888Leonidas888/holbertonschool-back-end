@@ -34,7 +34,7 @@ def main():
                 print(text)
                 for todo in todos:
                     if todo['completed']:
-                        print(f'\t{todo["title"]}')
+                        print(f'\t {todo["title"]}')
 
         except requests.exceptions.HTTPError as e:
             print(f"Error de solictud: {e}")
