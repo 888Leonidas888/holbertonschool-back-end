@@ -20,7 +20,7 @@ def main():
             exit()
 
         data = response.json()
-        EMPLOYEE_NAME = data['name']
+        EMPLOYEE_NAME = data['username']
 
         response = requests.get(url_todos)
 
