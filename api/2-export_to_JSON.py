@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Consumimos API para extraer información ficticia"""
+import json
 import requests
 from sys import argv
-import json
 
 
 def main():
@@ -37,7 +37,10 @@ def main():
 
         for index in range(0, len(all_tasks)):
             dict_todos = {
-                'task': all_tasks[index], 'completed': status_task[index], 'username': EMPLOYEE_NAME}
+                'task': all_tasks[index],
+                'completed': status_task[index],
+                'username': EMPLOYEE_NAME}
+
             list_todos.append(dict_todos)
 
             employee_todos = {str(id): list_todos}
