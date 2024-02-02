@@ -43,7 +43,7 @@ def main():
         name_file_csv = f'{id}.csv'
 
         with open(name_file_csv, mode='w', newline='') as f:
-            writer = csv.writer(f)
+            writer = csv.writer(f, quoting=csv.QUOTE_ALL)
             writer.writerows(employee_todos)
     else:
         print("Se esperaba que ingresará un ID valido")
